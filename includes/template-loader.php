@@ -2,8 +2,8 @@
 
 	include ( ABSPATH . getOption('template_dir') . '/head.php' );
 	
-	if (!isset($_GET['pid'])) { $pid = '1'; } else { $pid = $_GET['pid']; }
-	print getPage($pid);
+	$slug = isset($_GET['slug']) ? $_GET['slug'] : '1';
+	print getPage($slug);
 	
 	include ( ABSPATH . getOption('template_dir') . '/foot.php' );
 	
