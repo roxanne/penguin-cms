@@ -2,9 +2,9 @@
 
 // Database connection info
 define ( 'DB_HOST', 'localhost' );
-define ( 'DB_USER', 'mytriba1' );
-define ( 'DB_PASSWORD', 'Titus01*' );
-define ( 'DB_DB', 'mytriba1_inrefco' );
+define ( 'DB_USER', 'test_user' );
+define ( 'DB_PASSWORD', 'test_pass' );
+define ( 'DB_DB', 'test_db' );
 
 // Define the absolute path to directory installation
 if ( !defined('ABSPATH') )
