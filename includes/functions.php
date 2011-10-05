@@ -12,9 +12,9 @@ function getOption($optionName) {
 		}
 	$mysqli->close;
 }
-function getPage($id,$type='content') {
+function getPage($slug,$type='content') {
 	$mysqli = new mysqli(DB_HOST,DB_USER,DB_PASSWORD,DB_DB);
-		if($result = $mysqli->query('SELECT ' . $type . ' from pages WHERE id = "'.$id.'"')) {
+		if($result = $mysqli->query('SELECT ' . $type . ' from pages WHERE slug = "'.$slug.'"')) {
 			while ($row = $result->fetch_object()) {
 				return $row->$type;
 			}
